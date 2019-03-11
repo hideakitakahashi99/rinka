@@ -1,0 +1,46 @@
+<%= form_for(@message, url: { action: :confirm }) do |f| %>
+  <div>
+    <h2>予約問い合わせフォーム</h2>
+ 
+      <% if @message.errors.present? %>
+        <div>
+          <strong>入力内容にエラーがあります</strong>
+          <ul>
+            <% @message.errors.each do |attr, error| %>
+              <li><%= error %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
+    
+    <div>
+      <strong>名前</strong>
+      <p><%= f.text_field :name, placeholder: '20文字以内' %></p>
+    </div>
+    <div>
+      <strong>メールアドレス</strong>
+      <p><%= f.text_field :email, placeholder: '30文字以内' %></p>
+    </div>
+    <div>
+      <strong>電話番号</strong>
+      <p><%= f.text_field :phone, placeholder: '20文字以内' %></p>
+    </div>
+    <div>
+      <strong>人数</strong>
+      <p><%= f.text_field :number, placeholder: '20文字以内' %></p>
+    </div>
+    <div>
+      <strong>ご希望開始時間</strong>
+      <p><%= f.text_field :time, placeholder: '20文字以内' %></p>
+    </div>
+    <div>
+      <strong>ご希望の日程</strong>
+      <p><%= f.text_field :date, placeholder: '20文字以内' %></p>
+    </div>
+    <div>
+      <strong>その他ご要望など</strong>
+      <p><%= f.text_area :content, placeholder: '200文字以内' %></p>
+    </div>
+      <%= f.submit '確認画面へ' %>
+  </div>
+<% end %>

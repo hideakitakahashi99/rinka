@@ -1,0 +1,57 @@
+<%= form_for @message, :url => done_path do |f| %>
+  <div>
+    <h2>予約問い合わせ内容の確認</h2>
+    <p>本フォームでは、予約は完了しておりません。ご予約可能かどうか、追ってご連絡差し上げます。またご希望に添えに場合がございますので、あらかじめご了承ください。</p>
+    <div>
+      <strong>名前</strong>
+      <p>
+        <%= f.hidden_field :name %>
+        <%= @message.name %>
+      </p>
+    </div>
+    <div>
+      <strong>メールアドレス</strong>
+      <p>
+        <%= f.hidden_field :email %>
+        <%= @message.email %>
+      </p>
+    </div>
+     <div>
+      <strong>電話番号</strong>
+      <p>
+        <%= f.hidden_field :phone %>
+        <%= @message.email %>
+      </p>
+    </div>
+     <div>
+      <strong>人数</strong>
+      <p>
+        <%= f.hidden_field :number %>
+        <%= @message.email %>
+      </p>
+    </div>ご希望の開始時間
+     <div>
+      <strong></strong>
+      <p>
+        <%= f.hidden_field :time %>
+        <%= @message.email %>
+      </p>
+    </div>
+     <div>
+      <strong>ご希望の日程</strong>
+      <p>
+        <%= f.hidden_field :date %>
+        <%= @message.email %>
+      </p>
+    </div>
+    <div>
+      <strong>その他ご要望など</strong>
+      <p>
+        <%= f.hidden_field :content %>
+        <%= simple_format(@message.content) %>
+      </p>
+    </div>
+      <%= f.submit '戻る', name: 'back' %>
+      <%= f.submit '送信する' %>
+  </div>
+<% end %>

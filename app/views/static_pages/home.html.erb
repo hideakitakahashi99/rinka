@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>Dining凜花(Dining凛花)
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
+    </head>
+    <body class="scroll-assist">
+        <div class="nav-container">
+            <a id="top"></a>
+            <nav class="absolute transparent">
+                <div class="nav-bar">
+                    <div class="module left">
+                        <a href="index.html">
+                            <%= image_tag("rinkalogo.png", :class => "logo logo-light" ) %>
+                            
+                        </a>
+                    </div>
+                    <div class="module widget-handle mobile-toggle right visible-sm visible-xs">
+                        <i class="ti-menu"></i>
+                    </div>
+                    <div class="module-group right">
+                        <div class="module left">
+                            <ul class="menu">
+                                <li>
+                                    <%= link_to "ホーム",{ :controller => "static_pages", :action => "home"}, data: {"turbolinks" => false} %>
+                                </li>
+                                <li>
+                                    <%= link_to "メニュー",{ :controller => "static_pages", :action => "menu"}, data: {"turbolinks" => false} %>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        予約
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/diningrinka/" target="_blank">
+                                        facebook
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--end of menu module-->
+                        
+                        
+                    </div>
+                    <!--end of module group-->
+                </div>
+            </nav>
+        </div>
+        <div class="main-container">
+            <section class="fullscreen image-bg overlay">
+                <div class="background-image-holder">
+                    <%= image_tag("IMG_1299.JPG", :class => "background-image" ) %>
+                   
+                </div>
+                <div class="container v-align-transform">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <%= image_tag("rinkalogo.png", :class => "image-big" ) %>
+                            
+                            <h4>皆様のお帰りをお待ちしております。</h4>
+                            <h4>代表:0794-63-0880  携帯:090-1905-0862</h4>
+          <h4></h4>
+          <h4><a href="mailto:info&#64;diningrinka.com">ご予約・お問い合わせ:info&#64;diningrinka.com</a></h4>
+                        </div>
+
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+                <div class="align-bottom text-center">
+                    <a class="btn btn-white mb32" href="#">Reserve A Table</a>
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-sm-offset-1">
+                            <div class="feature bordered">
+                                <h1 class="large uppercase mb64 mb-xs-24">Welcome My Home Dining</h1>
+                                <p class="mb80 mb-xs-24">
+                                    小野市の住宅街<br>仕事帰り<br>恋人たちの憩いの場所として<br>ダイニング凜花があります。<br><br>お帰りなさいと迎えるような家族空間<br>小野市の新しいスポットです。<br>こだわりの創作料理と美味しいお酒をお楽しみください。
+                                </p>
+                                <a class="btn btn-lg btn-filled inner-link" href="#book-table">Book A Table</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-5">
+                            <%= image_tag("basaashi.jpg", :class => "mt80 mt-xs-0 mb24" ) %>
+                            <%= image_tag("chikin.jpg", :class => "col-md-pull-4" ) %>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+
+            <section class="pt240 pb240 image-bg">
+                <div class="background-image-holder">
+                    <%= image_tag("basaashi.jpg", :class => "background-image" ) %>
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-md-push-6 pt80 pt-xs-0">
+                            <div class="feature bordered text-center bg-secondary">
+                                <h3 class="uppercase mb40 mb-xs-24">料理への想い</h3>
+                                <div class="feature bordered ">
+                                <p>
+                                    <strong>地元に愛される定番のお料理はもちろん、シェフが腕をふるう創作料理もオススメです。</br>お味はもちろん、見た目にも楽しめるように工夫しております。</strong>
+                                </p>
+                            </div>
+                                <div class="mb40">
+                                    <h6 class="mb8 uppercase">飲み物</h6>
+                                    <p>
+                                    ボトルリザーブOK。</br>焼酎日本酒の種類はもちろん、ノンアルコールも数多く揃えております。
+                                    </p>
+                                </div>
+                                <div class="mb40">
+                                    <h6 class="mb8 uppercase">食べ物</h6>
+                                    <p>
+                                        新鮮な食材を使って、お野菜も豊富に取り揃え、優しい味付けでお料理しています。
+                                    </p>
+                                </div>
+                                <div class="mb40">
+                                    <h6 class="mb8 uppercase">デザート</h6>
+                                    <p>
+                                        バニラビーンズ入り、定番バニラアイスクリームは本格的で濃厚な味をお愉しみ頂けます。</br>
+                                    人気のクリームブリュレはある時、ない時...笑
+                                    </p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-md-6 col-md-pull-6">
+                            
+                            <div class="feature bordered text-center bg-primary">
+                                <h3 class="uppercase mb40 mb-xs-24">お料理　一例</h3>
+                                <div class="mb40">
+                                    <h4 class="mb8 uppercase">カラフルジャーサラダ</h4>
+                                    <p>
+                                    旬のカラフルなお野菜にドレッシングをよく染み込ませた、爽やかなサラダです。</br><strong>¥680</strong>
+                                    </p>
+                                </div>
+                                <div class="mb40">
+                                    <h6 class="mb8 uppercase">Roasted Artichoke</h6>
+                                    <p>
+                                        Served with a tangy horseradish cream on a bed of slaw.
+                                    </p>
+                                </div>
+                                <div class="mb40">
+                                    <h6 class="mb8 uppercase">Salad of Northern Greens</h6>
+                                    <p>
+                                        A selection of freshly foraged greens from Northern Australia.
+                                    </p>
+                                </div>
+                                <div class="mb40">
+                                    <h6 class="mb8 uppercase">Fried Spring Rolls</h6>
+                                    <p>
+                                        Lightly fried in Sesami Oil, filled with fresh chicken or beef.
+                                    </p>
+                                </div>
+                                <div class="mb40">
+                                    <h6 class="mb8 uppercase">Caramel Pork Belly</h6>
+                                    <p>
+                                        Slow roasted Pork Belly served with apple slaw.
+                                    </p>
+                                </div>
+                                <%= link_to "お料理一覧はこちら",{ :controller => "static_pages", :action => "menu"},{:class => "btn btn-lg btn-filled inner-link", data: {"turbolinks" => false}} %>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <section class="pt240 pb240 image-bg">
+                <div class="background-image-holder">
+                    <%= image_tag("rinka-image.gif", :class => "background-image" ) %>
+                </div>
+            </section>
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                             <div class="lightbox-grid square-thumbs" data-gallery-title="Gallery">
+                                <ul>
+                                    <li>
+                                        <a href="img/cover1.jpg" data-lightbox="true">
+                                            <div class="background-image-holder">
+                                                <%= image_tag("IMG_1263.JPG", :class => "background-image" ) %>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="img/home12.jpg" data-lightbox="true">
+                                            <div class="background-image-holder">
+                                                <%= image_tag("IMG_1314.JPG", :class => "background-image" ) %>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="img/home14.jpg" data-lightbox="true">
+                                            <div class="background-image-holder">
+                                                <%= image_tag("IMG_1362.JPG", :class => "background-image" ) %>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="img/home17.jpg" data-lightbox="true">
+                                            <div class="background-image-holder">
+                                               <%= image_tag("IMG_1377.JPG", :class => "background-image" ) %>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="img/cover5.jpg" data-lightbox="true">
+                                            <div class="background-image-holder">
+                                                <%= image_tag("IMG_1413.JPG", :class => "background-image" ) %>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="img/cover6.jpg" data-lightbox="true">
+                                            <div class="background-image-holder">
+                                                <%= image_tag("IMG_1542.JPG", :class => "background-image" ) %>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="img/cover7.jpg" data-lightbox="true">
+                                            <div class="background-image-holder">
+                                                <%= image_tag("IMG_1513.JPG", :class => "background-image" ) %>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="img/cover8.jpg" data-lightbox="true">
+                                            <div class="background-image-holder">
+                                                <%= image_tag("basaashi.jpg", :class => "background-image" ) %>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--end of lightbox gallery-->
+                        </div>
+                       
+                        
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <section class="image-bg overlay parallax">
+                <div class="background-image-holder">
+                    <img alt="image" class="background-image" src="img/resto3.jpg" />
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="text-slider slider-paging-controls controls-outside relative">
+                            <ul class="slides">
+                                <li>
+                                    <div class="col-md-8 col-md-offset-2">
+                                        <div class="feature bordered text-center">
+                                            <h3>"Instead of treading the mock meat path, he's making each dish a celebration of vegetables in their prime, rather than trying to retro-engineer steak and lasagne"</h3>
+                                            <h6 class="uppercase">Luke King - Food Magazine</h6>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="col-md-8 col-md-offset-2">
+                                        <div class="feature bordered text-center">
+                                            <h3>"One of the most exciting eateries to open in St Kilda. in years - These guys have years of experience and it shows, from the decor to the presentation - perfect!"</h3>
+                                            <h6 class="uppercase">Jake Higgins - The Age</h6>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <a id="book-table"></a>
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="feature bordered">
+                                <h1 class="large uppercase mb64 mb-xs-24">Book A Table</h1>
+                                <form class="form-email" data-success="Thanks for your booking, we will be in touch to confirm shortly." data-error="Please fill all fields correctly.">
+                                    <input type="text" class="validate-required" name="name" placeholder="Name for booking" />
+                                    <input type="text" class="validate-required" name="phone" placeholder="Phone Number" />
+                                    <div class="select-option col-md-6 p0">
+                                        <i class="ti-angle-down"></i>
+                                        <select class="validate-required" name="persons">
+                                            <option selected value="">Number of Guests</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                            <option value="4">Four</option>
+                                            <option value="5">Five</option>
+                                            <option value="6">Six</option>
+                                            <option value="7">Seven</option>
+                                            <option value="8">Eight</option>
+                                            <option value="9">Nine</option>
+                                            <option value="10">Ten</option>
+                                        </select>
+                                    </div>
+                                    <!--end select-->
+                                    <div class="select-option col-md-6 p0">
+                                        <i class="ti-angle-down"></i>
+                                        <select class="validate-required" name="time">
+                                            <option selected value="">Time</option>
+                                            <option value="6pm">6:00pm</option>
+                                            <option value="630pm">6:30pm</option>
+                                            <option value="7pm">7:00pm</option>
+                                            <option value="730pm">7:30pm</option>
+                                            <option value="8pm">8:00pm</option>
+                                            <option value="830pm">8:30pm</option>
+                                            <option value="9pm">9:00pm</option>
+                                        </select>
+                                    </div>
+                                    <!--end select-->
+                                    <input type="text" class="validate-required" name="date" placeholder="Date (DD/MM/YYYY)" />
+                                    <button type="submit">Reserve Table</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="map-holder pt160 pb160 mt80 mt-xs-0 mb24">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3274.1700216620347!2d134.93972465025007!3d34.8519549825148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x96cf3e12585b0a64!2z44OA44Kk44OL44Oz44Kw5Yec6Iqx77yI44OA44Kk44OL44Oz44Kw5Yeb6Iqx77yJ!5e0!3m2!1sja!2sjp!4v1559967794525!5m2!1sja!2sjp" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            </div>
+                            <div class="feature bordered">
+                                <h4 class="uppercase">Contact Us</h4>
+                                <p>〒675-1371
+                                    <br /> 小野市 黒川町 1785
+                                </p>
+                                <p><strong>18:00 - 22:30(LO.)</br>不定休</strong>
+                                </p>
+                                    <strong>P:</strong> 0794-63-0880
+                                    <br />
+                                    <strong>E:</strong> info@diningrinka.com
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <footer class="footer-1 bg-secondary">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <%= image_tag("rinkalogo.png", :class => "image-big" ) %>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="widget">
+                                <h6 class="title">Recent Posts</h6>
+                                <hr>
+                                <ul class="link-list recent-posts">
+                                    <li>
+                                        <a href="#">Hugging pugs is super trendy</a>
+                                        <span class="date">February
+                                            <span class="number">14, 2015</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <a href="#">Spinning vinyl is oh so cool</a>
+                                        <span class="date">February
+                                            <span class="number">9, 2015</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <a href="#">Superior theme design by pros</a>
+                                        <span class="date">January
+                                            <span class="number">27, 2015</span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--end of widget-->
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="widget">
+                                <h6 class="title">Latest Updates</h6>
+                                <hr>
+                                <div class="twitter-feed">
+                                    <div class="tweets-feed" data-feed-name="mrareweb">
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end of widget-->
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="widget">
+                                <h6 class="title">Instagram</h6>
+                                <hr>
+                                <div class="instafeed" data-user-name="mrareweb">
+                                    <ul></ul>
+                                </div>
+                            </div>
+                            <!--end of widget-->
+                        </div>
+                    </div>
+                    <!--end of row-->
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <span class="sub">&copy; Copyright 2019 - DINING凜花</span>
+                        </div>
+                        <div class="col-sm-6 text-right">
+                            <ul class="list-inline social-list">
+                                <li>
+                                    <a href="#">
+                                        <i class="ti-twitter-alt"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="ti-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="ti-dribbble"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="ti-vimeo-alt"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--end of container-->
+                <a class="btn btn-sm fade-half back-to-top inner-link" href="#top">Top</a>
+            </footer>
+        </div>
+    </body>
+</html>
